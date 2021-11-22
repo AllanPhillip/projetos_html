@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root{
+    --white-color: #E3E3E3; 
+    --purple-color: #AE77B9; 
+    --black-color: #222;
+    --gray-color: rgb(53, 50, 50); 
+    --red-color: red; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*CONTAINER*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container > * {
+    padding: 10px;
+}
+
+/*HEADER*/
+
+.page-header{
+    background-color: var(--white-color);
+}
+
+.page-header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page-header nav ul{
+    order: 1;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.page-header nav ul li{
+    padding-right: 25px;
+}
+
+.page-header .contato{
+    font-family: font-family:'Roboto Condensed', sans-serif;
+    font-size: 1.5rem; 
+    padding: 10px 15px;
+    border: 1px solid; 
+    border-radius: 10px;  
+}
+
+.page-header a{
+    color: var(--black-color);
+}
+.page-header a:hover{
+    color: var(--purple-color);
+    text-decoration: underline;
+}
+
+
+.page-header .contato:hover{
+    background-color: var(--white-color);
+
+}
+/*MAIN*/
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-blend-mode*/
+/*https://caniuse.com/*/
+
+.page-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background: var(--purple-color) url(../img/cidade.jpg) no-repeat center/cover;
+    background-blend-mode: hard-light;
+    color: var(--white-color);
+}
+
+.page-main div{
+    max-width: 50vw;
+}
+.page-main h1{
+    margin-bottom: 30px;
+}
+/*FOOTER*/
+
+.page-footer{
+    display: flex;
+    background-color: var(--white-color); 
+    flex-direction: column-reverse;
+}
+.page-footer ul{
+    display: flex;
+    font-size:1.8rem;
+    margin-bottom: 10px;
+}
+.page-footer ul li{
+    margin-right: 25px;
+}
